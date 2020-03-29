@@ -24,19 +24,13 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-            child: Stack(
-              children: <Widget>[
-                Container(
-                  padding: EdgeInsets.fromLTRB(10, 40, 0, 0),
-                  child: Text(
-                    'Hello World',
-                    style: TextStyle(
-                      fontSize: 50.0,
-                      fontWeight: FontWeight.bold
-                    ),
-                  ),
-                )
-              ],
+            padding: EdgeInsets.fromLTRB(10, 40, 0, 0),
+            child: Text(
+              'Hello World',
+              style: TextStyle(
+                  fontSize: 50.0,
+                  fontWeight: FontWeight.bold
+              ),
             ),
           ),
           Container(
@@ -75,7 +69,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Container(
             alignment: Alignment.centerRight,
-            padding: EdgeInsets.only(top: 20, left: 10, right: 10),
+            padding: EdgeInsets.only(top: 20, right: 10),
             child: Text(
               'Forgot password',
               style: TextStyle(
@@ -92,9 +86,9 @@ class _HomePageState extends State<HomePage> {
             height: 50,
             child: Material(
               borderRadius: BorderRadius.circular(25),
-              shadowColor: Colors.amberAccent,
+              shadowColor: Colors.deepOrange,
               color: Colors.blue,
-              elevation: 7,
+              elevation: 10,
               child: GestureDetector(
                 onTap: (){
                   print('Tap to login');
